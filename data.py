@@ -1,0 +1,21 @@
+class Data:
+    CREATE_USER_FULL = {'email': 'timofey.v@yandex.ru', 'password': '1234', 'name': 'Tim'}
+    CREATE_USER_NOT_EMAIL = {'email': '', 'password': '1234', 'name': 'Tim'}
+    CREATE_USER_NOT_PASSWORD = {'email': 'timofey.v@yandex.ru', 'password': '', 'name': 'Tim'}
+    CREATE_USER_NOT_NAME = {'email': 'timofey.v@yandex.ru', 'password': '1234', 'name': ''}
+    LOGIN_DATA_NOT_EMAIL = {'email': '', 'password': '1234'}
+    LOGIN_DATA_NOT_PASSWORD = {'email': 'timofey.v@yandex.ru', 'password': ''}
+    LOGIN_DATA_WRONG_EMAIL = {'email': 'rt', 'password': '1234'}
+    LOGIN_DATA_WRONG_PASSWORD = {'email': 'timofey.v@yandex.ru', 'password': 'g'}
+    MESSAGE_CREATE_REGISTERED_USER = 'User already exists'
+    MESSAGE_CREATE_USER_NOT_FULL = 'Email, password and name are required fields'
+    MESSAGE_LOGIN_FAIL = 'email or password are incorrect'
+    MESSAGE_UNAUTHORIZED_USER = 'You should be authorised'
+    MESSAGE_CREATE_ORDER_WRONG_INGREDIENT_ID = 'One or more ids provided are incorrect'
+    MESSAGE_CREATE_ORDER_WITHOUT_INGREDIENTS = 'Ingredient ids must be provided'
+    EDIT_USER_EMAIL = {'email': 'timofey.v1@yandex.ru', 'name': 'Tim'}
+    EDIT_USER_NAME = {'email': 'timofey.v@yandex.ru', 'name': 'Tim1'}
+    INGREDIENT_1 = {'ingredients': ['61c0c5a71d1f82001bdaaa6d']}
+    INGREDIENT_2 = {'ingredients': ['61c0c5a71d1f82001bdaaa6d', '61c0c5a71d1f82001bdaaa6f']}
+    INGREDIENT_WRONG_ID = {'ingredients': ['60d3b41abdacab0026a733c6']}
+    INGREDIENT_NONE = {'ingredients': ['']}
